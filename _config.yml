@@ -1,0 +1,9 @@
+auto:        true
+
+navigation:
+- text: articles
+  url: /articles/ 
+- text: source
+  url: http://github.com/cullenr
+- text: contact
+  url: /contact/

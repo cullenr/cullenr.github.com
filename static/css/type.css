@@ -1,0 +1,62 @@
+h1 #pron {
+	font: 16px/18px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #999;
+}
+
+.logo:link {
+	color: #000;
+	text-decoration:none;
+}
+
+.logo:visited {
+	color: #000;
+	text-decoration:none;
+}
+
+.logo:active {
+	color: #000;
+	text-decoration:none;
+}
+
+.logo:hover {
+	color: #000;
+	text-decoration:none;
+}
+
+.error-code {
+	font-size: 80px;
+	color: #999;
+}
+
+#side-nav {
+	float:right;
+}
+
+#navigation {
+	float: right;
+}
+
+.navitem {
+	float: left;
+	margin: 0 0 0 10px;
+}
+
+.navitem a:link {
+	color: #999;
+	text-decoration:none;
+}
+
+.navitem a:visited {
+	color: #999;
+	text-decoration:none;
+}
+
+.navitem a:active {
+	color: #555;
+	text-decoration:underline;
+}
+
+.navitem a:hover {
+	color: #CCC;
+	text-decoration:underline;
+}

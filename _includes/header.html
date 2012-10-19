@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>{{ page.title }}</title>
+	<meta name="description" content="lexer tech site">
+	<meta name="author" content="cullenr">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="/static/css/base.css">
+	<link rel="stylesheet" href="/static/css/skeleton.css">
+	<link rel="stylesheet" href="/static/css/layout.css">
+	<link rel="stylesheet" href="/static/css/type.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<link rel="shortcut icon" href="/static/images/favicon.ico">
+	<link rel="apple-touch-icon" href="/static/images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/static/images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/static/images/apple-touch-icon-114x114.png">
+
+</head>
+<body>
+	<div class="container">
+		<div class="sixteen columns">
+			<h1 class="remove-bottom" style="margin-top: 40px"><a href="/" class="logo">lexer <span id="pron">/lɛksər/</span></a></h1>
+			<h5>{{ page.title }}</h5>
+
+			<nav id="navigation">
+				{% unless page.layout == 'front' %}
+				<ul class="navigation">
+					{% for link in site.navigation %}
+
+						{% if page.url == link.url or page.layout == link.layout %}
+							{% assign current = 'current' %}
+						{% else %}
+							{% assign current = nil %}
+						{% endif %}
+
+					<li class="navitem">
+						<a class="{{ current }}" href="{{ link.url }}">{{ link.text }}</a>
+					</li>
+					{% endfor %}
+				</ul>
+				{% endunless %}
+			</nav>
+
+			<hr />
+		</div>
