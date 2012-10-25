@@ -3,22 +3,22 @@ h1 #pron {
 	color: #999;
 }
 
-.logo:link {
+.lexer:link {
 	color: #000;
 	text-decoration:none;
 }
 
-.logo:visited {
+.lexer:visited {
 	color: #000;
 	text-decoration:none;
 }
 
-.logo:active {
+.lexer:active {
 	color: #000;
 	text-decoration:none;
 }
 
-.logo:hover {
+.lexer:hover {
 	color: #000;
 	text-decoration:none;
 }
@@ -62,7 +62,7 @@ h1 #pron {
 }
 	
 #logo {
-	
+	display: block;
 	float: right;
 }
 	
