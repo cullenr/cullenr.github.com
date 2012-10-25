@@ -1,5 +1,5 @@
 ---
-title: Writing PDF Documents
+title: Writing PDF Files
 layout: post
 ---
 
