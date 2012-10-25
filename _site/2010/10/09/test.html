@@ -27,8 +27,13 @@
 </head>
 <body>
 	<div class="container">
-		<div class="sixteen columns">
+		<div class="sixteen columns page-header">
 			<h1 class="remove-bottom" style="margin-top: 40px"><a href="/" class="logo">lexer <span id="pron">/lɛksər/</span></a></h1>
+			<object type="image/svg+xml" data="/static/images/crow.svg" id="logo">
+				<!--[if lte IE 8]><img src="/static/images/crow.png"><![endif]-->
+				<!--[if gt IE 8]><img src="/static/images/crow.png"><![endif]-->
+				<!--[if !IE]> --><img src="/static/images/crow.png"><!-- <![endif]-->
+			</object>
 			<h5>New Post</h5>
 
 			<nav id="navigation">
@@ -77,6 +82,8 @@
 		
 				<div class="four columns">
 			<ul id="side-nav">
+			
+				<li><span>25 Oct 2012</span> &raquo; <a href="/2012/10/25/writing-pdf-documents.html">Writing PDF Files</a></li>
 			
 				<li><span>18 Oct 2012</span> &raquo; <a href="/2012/10/18/hello-world.html">Hello World</a></li>
 			

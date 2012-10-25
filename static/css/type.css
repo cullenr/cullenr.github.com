@@ -60,3 +60,10 @@ h1 #pron {
 	color: #CCC;
 	text-decoration:underline;
 }
+
+	/* Mobile Only */
+	
+		#logo {
+			float: right;
+		}
+	
