@@ -4,6 +4,6 @@ navigation:
 - text: articles
   url: /articles/ 
 - text: source
-  url: http://github.com/cullenr
+  url: /
 - text: contact
   url: /contact/
