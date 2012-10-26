@@ -3,7 +3,5 @@ auto:        true
 navigation:
 - text: articles
   url: /articles/ 
-- text: source
-  url: /
 - text: contact
   url: /contact/
