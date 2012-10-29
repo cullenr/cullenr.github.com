@@ -5,7 +5,7 @@
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<title>Lexer.cc</title>
+	<title>OSX Apache Symlinks</title>
 	<meta name="description" content="lexer tech site">
 	<meta name="author" content="cullenr">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -38,7 +38,7 @@
 				</object>
 			</h1>
 				
-			<h5>Lexer.cc</h5>
+			<h5>OSX Apache Symlinks</h5>
 			
 			<nav id="navigation">
 				
@@ -71,11 +71,20 @@
 
 		<div class="twelve columns">
 			<div id="post">
-<p>Hello World.</p>
-
-<p>This is the homepage for Lexer Tech Limited. Content will be moved over shortly.</p>
-
-<p>The crow logo is inspired by the crows from Disney&#8217;s Dumbo, I like their lexical analysis!</p>
+<p>Had a little difficulty finding where to specify the symlink handling for Apache this morning. The config file is located here :</p>
+<div class='highlight'><pre><code class='bash'>/private/etc/apache2/users/&lt;username&gt;.conf
+</code></pre>
+</div>
+<p>Edit this to look like this if your having problems with OSX not following symlinks on your <strong>DEV</strong> machine.</p>
+<div class='highlight'><pre><code class='xml'><span class='nt'>&lt;Directory</span> <span class='err'>&quot;/Users/cullenr/Sites/&quot;</span><span class='nt'>&gt;</span>
+    Options Indexes MultiViews FollowSymLinks
+    AllowOverride None
+    Order allow,deny
+    Allow from all
+<span class='nt'>&lt;/Directory&gt;</span>
+</code></pre>
+</div>
+<p>Another thing to remember is that if Apache does not have permission to read a directory above the &#8220;source&#8221; file/dir in its directory tree then Apache will not show the file in the &#8220;target&#8221; tree it has been added to even if it can read every dir in this &#8220;target&#8221; tree.</p>
 </div>
 		</div>
 		
