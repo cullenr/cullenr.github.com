@@ -11,7 +11,7 @@ Had a little difficulty finding where to specify the symlink handling for Apache
 
 Edit this to look like this if your having problems with OSX not following symlinks on your **DEV** machine.
 
-{% highlight xml %}
+{% highlight apache %}
 <Directory "/Users/cullenr/Sites/">
     Options Indexes MultiViews FollowSymLinks
     AllowOverride None
