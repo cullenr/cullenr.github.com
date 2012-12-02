@@ -1,5 +1,5 @@
 ---
-title: FindSDL.cmake MSYS Linker Errors
+title: SDL CMake MSYS Linker Errors
 layout: post
 ---
 
